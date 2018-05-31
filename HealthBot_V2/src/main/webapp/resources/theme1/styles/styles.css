@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.font--semi-bold {
+    font-weight: 600;
+}
+.font--bold {
+    font-weight: 700;
+}
+.padding--xs {
+    padding: 20px 0;
+}
+.padding--sm {
+    padding: 50px 0;
+}
+.padding--lg {
+    padding: 100px 0;
+}
+
+.site--header {
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.35);
+}
+.logo--container {
+    float: left;
+}
+.site--logo {
+    height: 25px;
+}
+.nav--list {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+.nav--list .nav--item {
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav--list .nav--item a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #282828;
+    text-decoration: none;
+}
+.nav--list .nav--item a:hover {
+    color: #0055ff;
+}
+.btn--nav {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 40px;
+    margin-top: 15px;
+    background: #0053fb;
+    color: #fff !important;
+    max-width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: ease all .3s;
+}
+.btn--nav:hover {
+    text-decoration: none;
+    background: #19254a;
+}
+.close--sidebar,
+.menu--switch {
+    display: none;
+}
+@media (max-width: 992px) {
+    .site--nav {
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        background: #fff;
+        right: 0;
+        z-index: 999;
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+        padding: 20vh 0;
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        transition: all ease .3s;
+    }
+    .site--nav.active {
+        opacity: 1;
+        pointer-events: all;
+        transform: translate(0);
+    }
+    .nav--list .nav--item {
+        display: block;
+        text-align: left;
+        line-height: 3;
+    }
+    .nav--list .nav--item a {
+        font-size: 17px;
+    }
+    .close--sidebar {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        font-weight: 700;
+        right: 25px;
+        line-height: 1;
+        z-index: 99999;
+        cursor: pointer;
+    }
+    .menu--switch {
+        float: right;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+}
+input {
+    width: 100%;
+    outline: none;
+}
+input[type=checkbox], input[type=radio] {
+    width: 50%;
+    outline: none;
+}
+input[type="file"] {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.28);
+    font-weight: 700;
+}
+input[type="text"],
+input[type="date"],
+select {
+    height: 55px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid rgba(155, 178, 204, 0.4);
+    margin-bottom: 15px;
+    padding: 10px;
+}
+textarea {
+    min-height: 180px;
+    width: 100%;
+    font-size: 14px;
+    max-width: 100%;
+    border: 1px solid rgba(155, 178, 204, 0.4);
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+}
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #1195f7;
+}
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+::-moz-placeholder {
+  color:#ccc;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+}
+:-moz-placeholder {
+  color: #ccc;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.28);
+}
+.btn--submit {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 70px;
+    margin-top: 15px;
+    float: right;
+    background: #0053fb;
+    color: #fff;
+    max-width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: ease all .3s;
+}
+.btn--submit:hover {
+    opacity: .9;
+}
+
+footer {
+    padding: 100px 0;
+    background: #19254a;
+}
